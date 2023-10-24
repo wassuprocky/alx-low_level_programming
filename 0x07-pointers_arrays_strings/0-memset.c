@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  **_memset -Fills the memeory witha constant byte
  *@s: Refers to the pointer
@@ -8,12 +7,12 @@
  * Return:s when successful.
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memset( char *s, char b, unsigned int n)
 {
 	unsigned int i;
-	for( i = 0;i < n;i++)
+	for( i = 0; i < n; i++)
 	{
-		s[i]=b;
+		s[i] = b;
 	}
 	return (s);
 }
