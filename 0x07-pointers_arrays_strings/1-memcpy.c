@@ -1,24 +1,21 @@
 #include "main.h"
 
 /**
- * _memcpy - The main function for allocation of
- * memeory from @ source to @dest in @n number of times
+ * _memcpy - copies a memory area
+ * @dest: memory area to be copied to
+ * @src: memory area to be copied from
+ * @n: number of bytes to be copied
  *
- * @dest: The destination address
- *
- * @src: Source
- *
- * @n: Maximut times to be added
- *
- * Return: pointer to @dest
+ * Return: pointer to the copied memory block
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i = 0;
-	while (i < n)
+
+	for (; i < n; i++)
 	{
 		dest[i] = src[i];
-		i++;
 	}
 
 	return (dest);
