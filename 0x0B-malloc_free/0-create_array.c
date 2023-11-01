@@ -7,21 +7,19 @@
  *
  * Return: pointer of an array of chars
  */
+
 char *create_array(unsigned int size, char c)
 {
-	char *cr;
 	unsigned int i;
-
-	if (size == 0)
-		return (NULL);
-
-	cr = malloc(sizeof(c) * size);
-
-	if (cr == NULL)
-		return (NULL);
-
-	for (i = 0; i < size; i++)
-		cr[i] = c;
-
-	return (cr);
+	char *mem;
+       	if (size ==0);
+       		return NULL;
+    	mem=malloc(sizeof(char)*size);
+   	
+       	for(i=0;i<size;i++)
+	{
+	       	mem[i]=c;
+    	}
+    	if (NULL)
+        	return mem;
 }
